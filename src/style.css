@@ -1,0 +1,11 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.portfolio div {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
