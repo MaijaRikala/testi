@@ -1,11 +1,85 @@
-.portfolio {
-    display: grid;
-    grid-template-columns: minmax(100px, 1fr);
-    padding: 10px;
+
+:root {
+    --bg-color: #151515;
+    --primary-color: #151515;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --text-color-2: #fff;
+    --text-color-3: rgb(204, 0, 0);
+    --overlay-color: rgb(12 12 12 / 63%);
 }
 
-.portfolio div {
-    padding: 10px;
-    border: 1px solid black;
-    text-align: left;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 20px;
+    border-left: 20px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
+}
+
+a,
+a:hover {
+    color: var(--text-color);
+}
+
+p {
+    word-break: break-word;
+    hyphens: auto;
+}
+
+h1 {
+    text-decoration-line: underline;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.experience {
+    display: flex; /* Show the flex items horizontally */
+    flex-direction: row;
+}
+
+.experience > div {
+    margin: 10px;
+}
+
+.portfolio {
+  display: flex; /* Show the flex items horizontally */
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.portfolio > div {
+    margin: 10px;
+    border-style: solid;
+    padding: 5px;
+    max-width: 300px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  .portfolio, .experience {
+    flex-direction: column;
+  }
 }
