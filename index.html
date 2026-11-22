@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maija Rikala - Portfolio</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.github.com/MaijaRikala/testi; img-src 'self' *.github.com/MaijaRikala/testi; script-src-elem 'self' 'unsafe-inline' *.github.com/MaijaRikala/testi; script-src 'self' *.github.com/MaijaRikala/testi" />
     <title>testi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
     <link rel="stylesheet" href="src/style.css">
   </head>
 
@@ -18,35 +18,45 @@
       <h1>Maija Rikala | Portfolio</h1>
       <h3>MSc student in software engineering</h3>
       <h3>MSc in physics</h3>
+      <hr>
     </div>
 
     <div class="about">
       <h3>About me</h3>
-      <p>First graduated with a MSc in physics with specialisation in astronomy, now studying software engineering.</p>
+      <p>First graduated with a MSc in physics with specialisation in astronomy, now studying software engineering.<br>
+      </p>
     </div>
 
-    <div class="experience">
+    <div class="flex two">
       
       <div class="education">
-        <h3>Education</h3>
-        <ul>
-          <li>
-            MSc in physics | 2019-2025
-          </li>
-          <li>
-            MSc in technology | 2024 - (expexted graduation 2027)
-          </li>
-        </ul>
+        <span>
+          <h3>Education</h3>
+          <div class="card">
+            <ul>
+              <li>
+                MSc in physics | 2019-2025
+              </li>
+              <li>
+                MSc in technology | 2024 - (expexted graduation 2027)
+              </li>
+            </ul>
+          </div>
+        </span>
       </div>
 
       <div class="skills">
+        <span>
         <h3>Skills</h3>
-        <ul>
-          <li>Python, Java, JavaScript, C, C#</li>
-          <li>Unity</li>
-          <li>Linux</li>
-          <li>Figma</li>
-        </ul>
+          <div class="card">
+            <ul>
+              <li>Python, Java, JavaScript, C, C#</li>
+              <li>Unity</li>
+              <li>Linux</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </span>
       </div>
     
     </div>
@@ -54,33 +64,40 @@
     <div>
       <h3>Projects</h3>
     </div>
-    <div class="portfolio">
-      <div>
-        <a href="https://capstone.utu.fi/en-FlowPredictor">
+    <div class="flex three">
+      <div class="card">
+        <a href="https://capstone.utu.fi/en-FlowPredictor" target="_blank">
           <img src="src/assets/FlowPredictorss.png" alt="screenshot of FlowPredictor with prediction graph" width="200px" class="center">
         </a>
-        <p class="center">FlowPredictor: Capstone course project for predictin patient flow</p>
+        <p>FlowPredictor: Capstone course project for predicting patient flow</p>
       </div>
 
-      <div>
-        <a href="https://urn.fi/URN:NBN:fi-fe2025041125860">
+      <div class="card">
+        <a href="https://urn.fi/URN:NBN:fi-fe2025041125860" target="_blank">
           <img src="src/assets/SN2019agx.png" alt="graph of supernova 2019agx light curve" width="200px" class="center">
         </a>
-        <p class="center">MSc thesis on rise-times of core-collapse supernovae</p>
+        <p>MSc thesis on rise-times of core-collapse supernovae</p>
       </div>
 
-      <div>
-        <a href="https://github.com/8TonZa8/IGDT_2D">
+      <div class="card">
+        <a href="https://github.com/8TonZa8/IGDT_2D" target="_blank">
           <img src="src/assets/Stardust_screenshot.png" alt="screenshot of gameplay with two aliens in space" width="200px" class="center">
         </a>
-        <p class="center">2D platformer game project for a gaming course</p>
+        <p>2D platformer game project for a gaming course</p>
       </div>
 
-      <div>
-        <a href="https://wokwi.com/projects/429560734730357761">
+      <div class="card">
+        <a href="https://wokwi.com/projects/429560734730357761" target="_blank">
           <img src="src/assets/enter_password.jpg" alt="image of keypad, display and Arduino Uno" width="200px" class="center">
         </a>
-        <p class="center">Password setter for embedded programming course</p>
+        <p>Password setter for embedded programming course</p>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/MaijaRikala/MUI-project" target="_blank">
+          <img src="src/assets/Minesweeper_screenshot.png" alt="screenshot of gameplay of classic Minesweeper game" width="200px" class="center">
+        </a>
+        <p>Minesweeper game as a group project for a modern interfaces course</p>
       </div>
     </div>
   </body>
